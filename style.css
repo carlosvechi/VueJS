@@ -1,0 +1,27 @@
+.titulo{
+font-size: 6rem;
+color: bisque;
+}
+.subtitulo{
+font-size: 2rem;
+color: bisque;
+}
+#saudacao h1{
+    color: bisque;
+    font-size: 40px;
+    text-align:left
+}
+#saudacao p{
+    color: bisque;
+    font-size: 30px;
+    text-align:left
+}
+#top{
+    text-align: center;
+}
+body{
+    background-color:darkslategrey !important;
+}
+.jumbotron{
+    background-color:darkslategrey !important;
+}
