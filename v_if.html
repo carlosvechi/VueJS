@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Vue JS - Diretivas v-if v-else intro</title>
+    <script src="http://localhost:8098"></script>
+</head>
+<body>
+
+    <!-- v-show esconde o elemento no código html
+        v-if retira o elemento do código html
+        São códigos para realizar uma função específica no componente v-if, v-show, v-for, v-text, v-html, v-else -->
+
+    <div id="app"> 
+        <div v-if="usuario.id == 1">
+            ID: {{ usuario.id }}, <br>
+            Nome: {{ usuario.nome }}, <br>
+            Email: {{ usuario.email }}, <br>
+            Profissão: {{ usuario.profissao }}, <br>
+        </div>
+        <div v-else>
+            Não existe usuário com o ID digitado
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="scriptz.js"></script>
+</body>
+</html>
+
