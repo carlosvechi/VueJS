@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--O primeiro li tenta exibir o objeto item diretamente, o que não é uma
+prática comum e pode resultar na conversão do objeto em uma string
+"[object Object]".
+○ O segundo li exibe a propriedade nome de cada objeto item.
+○ O terceiro li exibe as propriedades nome e status de cada objeto
+item, separados por " - ".
+○ O quarto li exibe o índice (index) e o objeto item, semelhante ao
+primeiro li.
+○ O quinto li exibe o índice (index) e a propriedade nome de cada
+objeto item.
+  -->
+
+<div id="app">
+   <h1> {{ titulo }} </h1>
+   <ul>
+    <li v-for="item in linguagens"> {{ item }} </li><br>
+    <li v-for="item in linguagens"> {{ item.nome }} </li><br>
+    <li v-for="item in linguagens"> {{ item.nome }} {{ " - "}} {{ item.status }}</li><br>
+    <li v-for="(item, index) in linguagens"> {{ index + " = " }} {{ item }} </li><br>
+    <li v-for="(item, index) in linguagens"> {{ index + " = " }} {{ item.nome }} </li><br>
+   </ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="scriipt.js"></script>
+
+</body>
+</html>
