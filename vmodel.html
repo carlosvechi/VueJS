@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Quando o valor do elemtno do formulário muda, o valor correspondente nos dados do Vue também muda. 
+    Neste exemplo, o valor do campo de entrada está vinculado à propriedade message nos dados da instância Vue.
+    Qualquer alteração no campo de entrada atualizará automaticamente a propriedade message e refletirá no parágrafo.  -->
+    <div id="app">
+        <input type="text" v-model="message" placeholder="Digite uma mensagem">
+        <p> {{message }} </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="scriptss.js"></script>
+</body>
+</html>
