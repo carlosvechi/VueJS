@@ -1,0 +1,17 @@
+body{
+    margin: 0 auto
+}
+.tit{
+    background-color: rgb(85, 80, 71);
+}
+.calig{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#nome, #mail{
+    width: 50%;
+    margin: 0 auto;
+}
+.con{
+    width: 50% !important;
+    margin: 0 auto !important;
+}
