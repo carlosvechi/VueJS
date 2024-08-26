@@ -10,11 +10,11 @@
 </head>
 <body>
     <header>
-        <div class="">
-            <div class="p-5 tit text-white rounded">
-              <h1 class="text-center calig"> Formulário </h1> 
-            </div>
-          </div>
+      <div class="p-5 tit text-white rounded">
+        <img src="senai.png" class="img">
+        <h1 class="text-center calig"> Formulário </h1> 
+      </div>
+            
     </header>
     <div id="app" class="text-center center">
         <h1> {{ titulo }} </h1>
@@ -31,19 +31,22 @@
             </form>
           </div>
 
-        <label for="">Deseja receber nossas novidades?</label> <br>
-        <input type="radio" value="Sim" v-model="novidades" class=""> Sim
+        <label class="nov">Deseja receber nossas novidades?</label> <br>
+        <input type="radio" value="Sim" v-model="novidades"> Sim
         <input type="radio" value="Não" v-model="novidades"> Não
         <br><br>
-        <div class="form-check">
-            <label for="">Interesses:</label><br>
-            <input type="checkbox" value="Futebol" v-model="interesses"> Futebol<br>
-            <input type="checkbox" value="Formula" v-model="interesses"> Formula 1<br>
-            <input type="checkbox" value="Natação" v-model="interesses"> Natação<br>
+
+        <div class="form-check check">
+            <label class="checkbox-container"></label>
+            <legend class="nov">Interesses:</legend>
+              <input type="checkbox" value="Futebol" v-model="interesses"> Futebol<br>
+              <input type="checkbox" value="Formula" v-model="interesses"> Formula 1<br>
+              <input type="checkbox" value="Natação" v-model="interesses"> Natação<br>
+              <span class="checkmark"></span>
             <br><br>
         </div>
-
-        <label for="">Como nos conheceu?</label><br>
+    
+        <label class="nov">Como nos conheceu?</label><br>
         <select v-model="conheceu" class="form-select con">
             <option value="">Escolha</option>
             <option value="Google">Google</option>
